@@ -7,14 +7,20 @@
 @section('content')
     <div class="form">
         <h1>SIGN UP</h1>
-        <form action="">
+        @if ($errors->any())
+            @foreach ($errors->all() as $error)
+                <p class="error">{{ $error }}</p>
+            @endforeach
+        @endif
+        <form action="/" method="POST">
+            @csrf
             <div>
                 <label for="name">Name</label>
-                <input type="text" name="name" id="name">
+                <input type="text" name="name" id="name" maxlength="200" value="{{ old('name') }}">
             </div>
             <div>
                 <label for="email">Email</label>
-                <input type="text" name="email" id="email">
+                <input type="text" name="email" id="email" maxlength="320" value="{{ old('email') }}">
             </div>
             <input type="submit" id="submit" value="SUBMIT">
         </form>

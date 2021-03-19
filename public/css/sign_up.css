@@ -1,3 +1,7 @@
+.error {
+    color: red;
+    font-weight: bold;
+}
 #name,#email {
     border: solid 1px #7974d2;
     height: 40px;

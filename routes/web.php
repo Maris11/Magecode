@@ -16,4 +16,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
-Route::view('/signup', 'sign_up');
+Route::get('/signup', 'App\Http\Controllers\ClientController@create');
+Route::post('/','App\Http\Controllers\ClientController@store');
