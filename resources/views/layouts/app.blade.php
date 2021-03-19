@@ -20,10 +20,10 @@
             <div class="links">
                 <ul id="links">
                     <li><a href="/">Home</a></li>
-                    <li><a href="">Services</a></li>
-                    <li><a href="">About</a></li>
-                    <li><a href="">Contact</a></li>
-                    <li><a href="">FAQ</a></li>
+                    <li><a href="/services">Services</a></li>
+                    <li><a href="/about">About</a></li>
+                    <li><a href="/contact">Contact</a></li>
+                    <li><a href="/faq">FAQ</a></li>
                 </ul>
             </div>
             <div class="icon" onclick="menu()" onblur="hideMenu()"><i class="fa fa-bars"></i></div>

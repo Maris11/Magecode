@@ -8,9 +8,7 @@
     <div class="form">
         <h1>SIGN UP</h1>
         @if ($errors->any())
-            @foreach ($errors->all() as $error)
-                <p class="error">{{ $error }}</p>
-            @endforeach
+            <p class="error">{{ $errors->first() }}</p>
         @endif
         <form action="/" method="POST">
             @csrf

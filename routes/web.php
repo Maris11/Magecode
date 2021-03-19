@@ -18,3 +18,7 @@ Route::get('/', function () {
 });
 Route::get('/signup', 'App\Http\Controllers\ClientController@create');
 Route::post('/','App\Http\Controllers\ClientController@store');
+Route::view('/services','services');
+Route::view('/about','about');
+Route::view('/contact','contact');
+Route::view('/faq','faq');
